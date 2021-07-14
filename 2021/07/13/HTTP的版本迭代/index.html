@@ -20,15 +20,15 @@
   <title>HTTP的版本迭代 - 梦昵</title>
 
   
-    <meta name="description" content="1.http0.9 简单时间    1991特点:只有一个get请求命令响应：只能response字符串无连接，请求之后直接关闭 2.http1.0时间    1996年1.任何格式的内容都可以发送，包括图像、视频、二进制文件2.除了get请求，引入了post、head命令3.支持自定义的请求头     请求和响应格式发生改变；HTTP head描述一些元数据4.默认TCP短链接，每次都会tcp三">
+    <meta name="description" content="http">
 <meta property="og:type" content="article">
 <meta property="og:title" content="HTTP的版本迭代">
 <meta property="og:url" content="http://example.com/2021/07/13/HTTP%E7%9A%84%E7%89%88%E6%9C%AC%E8%BF%AD%E4%BB%A3/index.html">
 <meta property="og:site_name" content="梦昵">
-<meta property="og:description" content="1.http0.9 简单时间    1991特点:只有一个get请求命令响应：只能response字符串无连接，请求之后直接关闭 2.http1.0时间    1996年1.任何格式的内容都可以发送，包括图像、视频、二进制文件2.除了get请求，引入了post、head命令3.支持自定义的请求头     请求和响应格式发生改变；HTTP head描述一些元数据4.默认TCP短链接，每次都会tcp三">
+<meta property="og:description" content="http">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2021-07-13T13:22:13.000Z">
-<meta property="article:modified_time" content="2021-07-14T02:13:25.156Z">
+<meta property="article:modified_time" content="2021-07-14T03:10:04.200Z">
 <meta property="article:author" content="梦昵">
 <meta name="twitter:card" content="summary">
   
@@ -59,7 +59,7 @@
 
 <header class="header">
 
-<div class="logo-wrap"><a class="title" href="/"><img no-lazy height="32px" src="https://img0.baidu.com/it/u=3311900507,1448170316&fm=26&fmt=auto&gp=0.jpg"/ onerror="javascript:this.classList.add('error');this.src='https://cdn.jsdelivr.net/gh/cdn-x/placeholder@1.0.1/image/2659360.svg';"><span>梦昵</span></a></div><nav class="menu dis-select"><a class="nav-item active" href="/">文章</a><a class="nav-item" href="/article/">文章</a><a class="nav-item" href="/more/">更多</a></nav></header>
+<div class="logo-wrap"><a class="title" href="/"><img no-lazy height="32px" src="https://img0.baidu.com/it/u=3311900507,1448170316&fm=26&fmt=auto&gp=0.jpg"/ onerror="javascript:this.classList.add('error');this.src='https://cdn.jsdelivr.net/gh/cdn-x/placeholder@1.0.1/image/2659360.svg';"><span></span><span>梦昵</span></a></div><nav class="menu dis-select"><a class="nav-item active" href="/">文章</a><a class="nav-item" href="/article/">趣闻</a><a class="nav-item" href="/more/">更多</a></nav></header>
 <div class='widgets'>
   
     
@@ -97,6 +97,9 @@
 
 <article class='content md post'>
 <h1 class="article-title"><span>HTTP的版本迭代</span></h1>
+<p>http</p>
+<span id="more"></span>
+
 <h5 id="1-http0-9-简单"><a href="#1-http0-9-简单" class="headerlink" title="1.http0.9 简单"></a>1.http0.9 简单</h5><p>时间    1991<br>特点:只有一个get请求命令<br>响应：只能response字符串<br>无连接，请求之后直接关闭</p>
 <h5 id="2-http1-0"><a href="#2-http1-0" class="headerlink" title="2.http1.0"></a>2.http1.0</h5><p>时间    1996年<br>1.任何格式的内容都可以发送，包括图像、视频、二进制文件<br>2.除了get请求，引入了post、head命令<br>3.支持自定义的请求头     请求和响应格式发生改变；HTTP head描述一些元数据<br>4.默认TCP短链接，每次都会tcp三次握手</p>
 <h5 id="3-http1-1"><a href="#3-http1-1" class="headerlink" title="3.http1.1"></a>3.http1.1</h5><p>时间    1997年1月    主流的协议版本<br>特点：<br>1.默认长链接<br>        (1)HTTP/1.1支持长连接（PersistentConnection）和请求的流水线（Pipelining）处理;<br>        (2)在一个TCP连接上可以传送多个HTTP请求和响应，减少了建立和关闭连接的消耗和延迟;<br>        (3)在HTTP/1.1中默认开启Connection：keep-alive，一定程度上弥补了HTTP/1.0每次请求都要创建连接的缺点。<br>2.数据流 帧<br>3.并发请求 共有6个链接通道    —— 管道机制 同时发送请求<br>4.请求头规范  Content-type (url methods …)  缓存处理字段 Cache-Control<br>5.请求方式增加 put delete options(预请求) connect trace   get post<br>6.新增24个错误状态响应码</p>
